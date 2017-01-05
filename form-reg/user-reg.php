@@ -5,10 +5,7 @@
  * Date: 05.01.2017
  * Time: 13:24
  */
-function passwordHash($pass){
-    $salt = 'hs5y44u1m5s15su35hy3s51str';
-    return md5($salt . $pass . $salt . 123457);
-}
+require_once __DIR__ . '/lib.inc.php';
 
 if(empty($_POST['userName'])){
     $error['userName'] = 'Введите имя!<br />';
@@ -41,7 +38,7 @@ if(!empty($error)){
     exit;
 }
 
-$db = new PDO('mysql:dbname=form-registr;host=127.0.0.1', 'root', '');
+$db = connectPDO();
 $sql = "
 INSERT INTO users
 SET
@@ -64,6 +61,20 @@ $statement->bindParam(':userEmail', $_POST['userEmail'], PDO::PARAM_STR);
 
 $statement->execute();
 
-print_r($statement->errorInfo());
 
-print_r($_POST);
+session_start();
+
+$userInfo = [
+    'sessionId' => session_id(),
+    'userName' => $_POST['userName'],
+    'userLastName' => $_POST['userLastName'],
+    'userAge' => $_POST['userAge'],
+    'userSex' => $_POST['userSex'],
+    'userEmail' => $_POST['userEmail'],
+];
+
+$userInfoSerialize = serialize($userInfo);
+
+setcookie('userInfo', $userInfoSerialize, time() + 86400);
+
+header('Location: http://spargalki.php/form-reg/index.php');
