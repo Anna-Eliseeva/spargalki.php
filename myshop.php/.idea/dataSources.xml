@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3052373290">
-    <data-source source="LOCAL" name="MySQL - form-registr@localhost" uuid="ec8c74d9-bb12-4cf0-a047-d071f627d43b">
+  <component name="DataSourceManagerImpl" format="xml" hash="1165137465">
+    <data-source source="LOCAL" name="MySQL - myshop@localhost" uuid="e68ff315-77fc-4859-b562-b30aeb3dceba">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/form-registr</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/myshop</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

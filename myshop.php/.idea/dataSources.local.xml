@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - form-registr@localhost" uuid="ec8c74d9-bb12-4cf0-a047-d071f627d43b">
+    <data-source name="MySQL - myshop@localhost" uuid="e68ff315-77fc-4859-b562-b30aeb3dceba">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <introspection-scope>form-registr:</introspection-scope>
-      <resolve-scope>form-registr:</resolve-scope>
+      <introspection-scope>myshop:</introspection-scope>
+      <resolve-scope>myshop:</resolve-scope>
     </data-source>
   </component>
 </project>
