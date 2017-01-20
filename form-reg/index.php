@@ -23,7 +23,10 @@ if(!empty($_COOKIE['userInfo'])) {
 <body>
     <p>Hello <?php echo ($userInfo['userName']) ? $userInfo['userName'] : 'Guest' ?>!</p>
 
-    <?php if(!empty($userInfo)) { ?>
+    <?php if(!empty($userInfo)) {
+
+        ?>
+        <p>Последний раз Вы у нас были <?= $userInfo['userTime']?></p>
         <form action="#" method="get">
             <input name="destroyCookies" type="submit" value="Exit from account">
         </form>
@@ -46,6 +49,10 @@ if(!empty($_COOKIE['userInfo'])) {
             <input type="submit" value="Authorize"/>
         </form>
         <a href="form-reg.php">Form Registered!</a>
+
+        <a href="password.php"> Forget password?</a>
+
+
     <?php } ?>
 
 </body>

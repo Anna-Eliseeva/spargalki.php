@@ -47,7 +47,8 @@ SET
   users.`age` = :userAge,
   users.`sex` = :userSex,
   users.`password_hash` = :userPasswordHash,
-  users.`e-mail` = :userEmail
+  users.`e-mail` = :userEmail,
+  users.`time` = :userTime
 ";
 
 $statement = $db->prepare($sql);
@@ -58,6 +59,7 @@ $statement->bindParam(':userAge', $_POST['userAge'], PDO::PARAM_STR);
 $statement->bindParam(':userSex', mb_strtolower($_POST['userSex']), PDO::PARAM_STR);
 $statement->bindParam(':userPasswordHash', passwordHash($_POST['userPassword']), PDO::PARAM_STR);
 $statement->bindParam(':userEmail', $_POST['userEmail'], PDO::PARAM_STR);
+$statement->bindParam(':userTime', mktime(), PDO::PARAM_INT);
 
 $statement->execute();
 
@@ -70,7 +72,7 @@ $userInfo = [
     'userLastName' => $_POST['userLastName'],
     'userAge' => $_POST['userAge'],
     'userSex' => $_POST['userSex'],
-    'userEmail' => $_POST['userEmail'],
+    'userEmail' => $_POST['userEmail']
 ];
 
 $userInfoSerialize = serialize($userInfo);
