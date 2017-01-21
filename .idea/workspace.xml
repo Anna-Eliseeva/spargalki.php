@@ -44,8 +44,8 @@
       <file leaf-file-name="interface.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oop.php/interface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="429">
+              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -289,7 +289,7 @@
       <workItem from="1483602585410" duration="41633000" />
       <workItem from="1484038655096" duration="11069000" />
       <workItem from="1484300504194" duration="9147000" />
-      <workItem from="1484902028530" duration="6791000" />
+      <workItem from="1484902028530" duration="7798000" />
     </task>
     <task id="LOCAL-00001" summary="форма регистрации.регистрирует и сохраняет пользователей">
       <created>1483624940045</created>
@@ -319,11 +319,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484911439174</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Основы ООП ,изучаю что такое интерфейс,черновик">
+      <created>1484999016718</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1484999016718</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86233000" />
+    <option name="totallyTimeSpent" value="87240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="28" width="1376" height="740" extended-state="0" />
@@ -388,7 +395,8 @@
     <MESSAGE value="форма регистрации и авторизации пользователей" />
     <MESSAGE value="Основы ООП ,выполняю лабараторную работу" />
     <MESSAGE value="Основы ООП ,выполняю лабараторную работу.исправление ошибок" />
-    <option name="LAST_COMMIT_MESSAGE" value="Основы ООП ,выполняю лабараторную работу.исправление ошибок" />
+    <MESSAGE value="Основы ООП ,изучаю что такое интерфейс,черновик" />
+    <option name="LAST_COMMIT_MESSAGE" value="Основы ООП ,изучаю что такое интерфейс,черновик" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -771,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop.php/interface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="429">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding />
         </state>
       </provider>
